@@ -3,10 +3,10 @@ import cv2
 import numpy as np
 
 # 入力画像の読み込み
-img = cv2.imread("pic.png")
+img = cv2.imread("pic.jpg")
 
 # ガウスフィルタ
-imgs = cv2.GaussianBlur(img, (9, 9), 3)
+imgs = cv2.GaussianBlur(img, (9, 9), 5)
 
 # グレースケール変換
 gray = cv2.cvtColor(imgs, cv2.COLOR_RGB2GRAY)
